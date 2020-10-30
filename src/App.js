@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { auth } from "./firebase";
-import { useStateValue } from "./StateProvider";
+import { auth } from "./Data/firebase";
+import { useStateValue } from "./Data/StateProvider";
 import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
 
