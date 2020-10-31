@@ -285,8 +285,9 @@
     border: 1px solid #dddddd;
     border-radius: 3px;
 }
-  
+
 .subtotal__gift {
+    font-size: 15px;
     display: flex;
     align-items: center;
 }
