@@ -1,6 +1,6 @@
 import React,{ useState } from "react";
 import { Link, useHistory } from "react-router-dom";
-import { auth } from "../Data/firebase";
+import { auth } from "../data/firebase";
 
 function Login() {
     const history = useHistory();
@@ -30,7 +30,7 @@ function Login() {
                 }
             })
             .catch(error => alert(error.message))
-    }
+        }
     return (
         <div className="login">
             <Link to="/">
@@ -52,13 +52,11 @@ function Login() {
                     By signing-in you agree to the AMAZON FAKE CLONE Conditions of Use & Sale. Please
                     see our Privacy Notice, our Cookies Notice and our Interest-Based Ads Notice.
                 </p>
-                <button className='login__registerButton'>Forgot passward?</button>
-                <button onClick={register} className='login__registerButton'>Create your Amazon Account</button>
+                <button className='login__registerButton'>Forgot Passward?</button>
+                <button onClick={register} className='login__registerButton'>Create Your Amazon Account</button>
             </div>
-
-        </div>
+        </div>  
     );
-
 }
 
 export default Login;

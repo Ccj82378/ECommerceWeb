@@ -1,10 +1,11 @@
 import React, { useEffect } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { auth } from "./Data/firebase";
-import { useStateValue } from "./Data/StateProvider";
+import { auth } from "./data/firebase";
+import { useStateValue } from "./data/StateProvider";
 import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
+import CheckoutPage from "./pages/CheckoutPage";
 
 function App() {
   const [{}, dispatch] = useStateValue();
@@ -41,6 +42,9 @@ function App() {
           </Route>
           <Route exact path="/login">
             <LoginPage />
+          </Route>
+          <Route exact path="/checkout">
+            <CheckoutPage />
           </Route>
         </switch>
       </Router>

@@ -1,3 +1,13 @@
+/** MENU **/
+/* Header */
+/* Home */
+/* Product */
+/* login */
+/* Checkout */
+/* CheckoutPruduct */
+/* Subtotal */
+
+
 /* Header */   
 .header {
     height: 70px;
@@ -81,7 +91,7 @@
 .home__image {
     width: 100%;
     z-index: -1;
-    margin-bottom: -150px;
+    margin-bottom: -400px;
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 
@@ -210,3 +220,89 @@
     border-color: darkgray;
 }
 /* end of login */
+/* checkout */
+.checkout {
+    display: flex;
+    padding: 20px;
+    background-color: white;
+    height: max-content;
+  }
+  
+  .checkout__ad {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .checkout__title {
+    margin-right: 10px;
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+  }
+/* end of checkout */
+/* CheckoutPruduct */
+.checkoutProduct {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.checkoutProduct__info {
+    padding-left: 20px
+}
+
+.checkoutProduct__info > button {
+    background: #f0c14b;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: #111;
+}
+
+.checkoutProduct__image {
+    object-fit: contain;
+    width: 180px;
+    height: 180px;
+  }
+
+.checkoutProduct__rating {
+    display: flex;
+  }
+
+.checkoutProduct__title {
+    font-size: 17px;
+    font-weight: 800;
+}
+/*end of CheckoutPruduct */
+/* subtotal */
+.subtotal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: 100px;
+    padding: 20px;
+    background-color: #f3f3f3;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+}
+  
+.subtotal__gift {
+    display: flex;
+    align-items: center;
+}
+  
+.subtotal__gift > input {
+    margin-right: 5px;
+}
+
+.subtotal > button {
+    background: #f0c14b;
+    border-radius: 2px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: #111;
+}
+/* end of subtotal */
