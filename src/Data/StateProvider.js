@@ -1,3 +1,6 @@
+// Setup data layer
+// Need this to track the basket
+
 import React, { createContext, useContext, useReducer } from "react";
 
 // Prepares the dataLayer
